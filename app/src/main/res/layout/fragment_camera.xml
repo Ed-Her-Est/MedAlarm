@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#EFEFEF">
+    <ImageView
+        android:id="@+id/imageView_photo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:contentDescription="Foto Tomada"
+        android:scaleType="centerCrop"
+        android:background="@drawable/image_border"
+        android:elevation="8dp"
+        android:layout_marginBottom="20dp" />
+    <Button
+        android:id="@+id/button_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capturar Foto"
+        android:backgroundTint="#6200EE"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:elevation="4dp" />
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <GridLayout
+        android:id="@+id/centeredGridLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:padding="8dp"
+        android:rowCount="3"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="267dp">
+
+        <!-- Píldora -->
+        <ImageView
+            android:id="@+id/pillIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/icon_background"
+            android:contentDescription="@string/pill_icon"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/pill_icon_133842" />
+
+        <!-- Inyección -->
+        <ImageView
+            android:id="@+id/injectionIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/icon_background"
+            android:contentDescription="@string/injection_icon"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/medical_syringe_icon_158284" />
+
+        <!-- Cápsula -->
+        <ImageView
+            android:id="@+id/capsuleIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/icon_background"
+            android:contentDescription="@string/capsule_icon"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/pill_icon_icons_com_64420" />
+
+        <!-- Gotas -->
+        <ImageView
+            android:id="@+id/dropsIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/icon_background"
+            android:contentDescription="@string/drops_icon"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/dropper_icon_213236" />
+
+        <!-- Cucharada -->
+        <ImageView
+            android:id="@+id/spoonIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/icon_background"
+            android:contentDescription="@string/spoon_icon"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/spoon_icon_134317" />
+
+        <!-- Gel -->
+        <ImageView
+            android:id="@+id/gelIcon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/icon_background"
+            android:contentDescription="@string/gel_icon"
+            android:padding="12dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/cream_1_icon_icons_com_63664" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

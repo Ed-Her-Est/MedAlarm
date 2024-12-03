@@ -1,0 +1,195 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2FA59E"
+    tools:context=".HomeFragment">
+
+    <!-- Contenedor desplazable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- CardView para los datos -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                android:background="#FFFFFF">
+
+                <!-- Contenido del CardView -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="696dp"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Leyenda inicial -->
+                    <TextView
+                        android:id="@+id/tv_legend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Completa tus datos, es importante para el correcto funcionamiento de la aplicación."
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <!-- Nombre del usuario -->
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre: Usuario"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+
+                    <!-- Selección de género -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sexo:"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_gender"
+                        android:layout_width="346dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_male"
+                            android:layout_width="153dp"
+                            android:layout_height="wrap_content"
+                            android:text="Hombre"
+                            android:textColor="#000000" />
+
+                        <RadioButton
+                            android:id="@+id/rb_female"
+                            android:layout_width="177dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="Mujer"
+                            android:textColor="#000000" />
+                    </RadioGroup>
+
+                    <!-- Apartado de talla -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Talla:"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_height"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#F0F0F0"
+                            android:hint="Altura"
+                            android:inputType="number"
+                            android:padding="8dp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"
+                            android:text="centímetros"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Peso:"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_weight"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#F0F0F0"
+                            android:hint="Peso"
+                            android:inputType="numberDecimal"
+                            android:padding="8dp"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:layout_width="149dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="8dp"
+                            android:text="kilogramos"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+
+                    <!-- Apartado de fecha de nacimiento -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Fecha de nacimiento:"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_birth_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:background="#F0F0F0"
+                        android:hint="dd/mm/aaaa"
+                        android:inputType="none"
+                        android:padding="8dp"
+                        android:textColor="#000000" />
+
+
+                </LinearLayout>
+
+                <!-- Botón flotante -->
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="67dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="16dp"
+                    android:backgroundTint="#2FA59E"
+                    android:text="Guardar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2FA59E"
+    tools:context=".ConfigurarAlarmaFragment">
+
+    <!-- ScrollView para permitir el desplazamiento de la vista -->
+    <android.widget.ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- CardView para darle un estilo a todo el formulario -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+            <!-- LinearLayout dentro de la CardView para organizar los elementos -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+
+                <!-- TimePicker para seleccionar la hora -->
+                <android.widget.TimePicker
+                    android:id="@+id/timePicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp" />
+
+                <!-- LinearLayout horizontal para los botones -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="24dp">
+
+                    <!-- Botón para guardar la alarma, alineado a la izquierda -->
+                    <Button
+                        android:id="@+id/btnGuardar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Guardar Alarma"
+                        android:layout_marginEnd="8dp" />
+
+                    <!-- Botón para sonar la alarma inmediatamente, alineado a la derecha -->
+                    <Button
+                        android:id="@+id/btnSonarAhora"
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:text="Sonar Alarma Ahora" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </android.widget.ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

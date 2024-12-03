@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#2FA59E"
+    tools:context=".ConfigurarRecordatorioFragment">
+
+    <!-- CardView que envuelve el formulario -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvFrecuenciaTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="156dp"
+                android:layout_marginBottom="16dp"
+                android:text="¿Con qué regularidad deseas que te recuerde?"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rgFrecuencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbDiariamente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Diariamente"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbDeterminadosDias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="En determinados días de la semana"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbCadaXDias"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cada X días"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbCadaXHoras"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cada X horas"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/rbUnaVez"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Una vez"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <!-- El botón debe estar centrado en la parte inferior del CardView -->
+            <Button
+                android:id="@+id/btnContinuar"
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2FA59E"
+                android:padding="10dp"
+                android:text="Seguir"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MedAlarm</string>
+    <string name="pill_icon">Píldora</string>
+    <string name="injection_icon">Inyección</string>
+    <string name="capsule_icon">Cápsula</string>
+    <string name="drops_icon">Gotas</string>
+    <string name="spoon_icon">Cucharada</string>
+    <string name="gel_icon">Gel</string>
+
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/navigation_home">
+
+    <!-- Fragmento Home -->
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.medalarm.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <!-- Acción a WelcomeFragment -->
+        <action
+            android:id="@+id/action_homeFragment_to_welcomeFragment"
+            app:destination="@id/navigation_welcome" />
+    </fragment>
+
+    <!-- Fragmento Contacts -->
+    <fragment
+        android:id="@+id/navigation_contacts"
+        android:name="com.example.medalarm.ContactsFragment"
+        android:label="Contactos"
+        tools:layout="@layout/fragment_contacts">
+        <!-- Acción para ir a MedicamentDetailFragment -->
+        <action
+            android:id="@+id/action_contactsFragment_to_medicamentDetailFragment"
+            app:destination="@id/navigation_medicamentDetail" />
+    </fragment>
+
+    <!-- Fragmento Help -->
+    <fragment
+        android:id="@+id/navigation_help"
+        android:name="com.example.medalarm.HelpFragment"
+        android:label="Ayuda"
+        tools:layout="@layout/fragment_help" />
+
+    <!-- Fragmento Camera -->
+    <fragment
+        android:id="@+id/navigation_camera"
+        android:name="com.example.medalarm.CameraFragment"
+        android:label="Cámara" />
+
+    <!-- Nuevo fragmento WelcomeFragment -->
+    <fragment
+        android:id="@+id/navigation_welcome"
+        android:name="com.example.medalarm.WelcomeFragment"
+        android:label="Bienvenida"
+        tools:layout="@layout/fragment_welcome">
+        <!-- Acción para navegar a TratamientoFragment -->
+        <action
+            android:id="@+id/action_welcomeFragment_to_tratamientoFragment"
+            app:destination="@id/navigation_tratamiento" />
+    </fragment>
+
+    <!-- Agregar el fragmento TratamientoFragment -->
+    <fragment
+        android:id="@+id/navigation_tratamiento"
+        android:name="com.example.medalarm.TratamientoFragment"
+        android:label="Tratamiento"
+        tools:layout="@layout/fragment_tratamiento">
+        <!-- Acción para navegar a ConfigurarRecordatorioFragment -->
+        <action
+            android:id="@+id/action_tratamientoFragment_to_configurarRecordatorioFragment"
+            app:destination="@id/navigation_configurarRecordatorio" />
+    </fragment>
+
+    <!-- Nuevo fragmento ConfigurarRecordatorioFragment -->
+    <fragment
+        android:id="@+id/navigation_configurarRecordatorio"
+        android:name="com.example.medalarm.ConfigurarRecordatorioFragment"
+        android:label="Configurar Recordatorio"
+        tools:layout="@layout/fragment_configurar_recordatorio">
+        <!-- Acción para navegar a ConfigurarAlarmaFragment -->
+        <action
+            android:id="@+id/action_configurarRecordatorioFragment_to_configurarAlarmaFragment"
+            app:destination="@id/navigation_configurarAlarma" />
+    </fragment>
+
+    <!-- Nuevo fragmento ConfigurarAlarmaFragment -->
+    <fragment
+        android:id="@+id/navigation_configurarAlarma"
+        android:name="com.example.medalarm.ConfigurarAlarmaFragment"
+        android:label="Configurar Alarma"
+        tools:layout="@layout/fragment_configurar_alarma" />
+
+    <!-- Nuevo fragmento MedicamentDetailFragment -->
+    <fragment
+        android:id="@+id/navigation_medicamentDetail"
+        android:name="com.example.medalarm.MedicamentDetailFragment"
+        android:label="Detalles del Medicamento"
+        tools:layout="@layout/fragment_medicament_detail" />
+</navigation>

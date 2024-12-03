@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/house_solid"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/navigation_contacts"
+        android:icon="@drawable/tablets_solid__1_"
+        android:title="Medicamentos"/>
+
+    <item
+        android:id="@+id/navigation_help"
+        android:icon="@drawable/house_medical_flag_solid"
+        android:title="Farmacias"/>
+
+    <item
+        android:id="@+id/navigation_camera"
+        android:icon="@drawable/camera_solid"
+        android:title="Cámara"/>
+</menu>
